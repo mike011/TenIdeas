@@ -1,5 +1,6 @@
-package ca.charland.tenideas.TenIdeas;
+package ca.charland.tenideas;
 
+import ca.charland.tenideas.TenIdeas.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;

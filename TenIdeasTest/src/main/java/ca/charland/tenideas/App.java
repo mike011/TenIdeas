@@ -1,4 +1,4 @@
-package ca.charland.tenideas.TenIdeasTest;
+package ca.charland.tenideas;
 
 /**
  * Hello world!
