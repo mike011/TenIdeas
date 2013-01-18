@@ -1,17 +1,15 @@
 package ca.charland.tenideas.TenIdeas;
 
-import com.google.inject.Inject;
-
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectResource;
 import roboguice.inject.InjectView;
-import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.inject.Inject;
 
 public class HelloAndroidActivity extends RoboActivity {
 
