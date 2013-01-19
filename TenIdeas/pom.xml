@@ -56,4 +56,20 @@
 			</plugin>
 		</plugins>
 	</build>
+	<executions>
+		<execution>
+			<id>android-undeploy</id>
+			<phase>pre-clean</phase>
+			<goals>
+				<goal>undeploy</goal>
+			</goals>
+		</execution>
+		<execution>
+			<id>android-deploy</id>
+			<phase>install</phase>
+			<goals>
+				<goal>deploy</goal>
+			</goals>
+		</execution>
+	</executions>
 </project>
