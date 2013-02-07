@@ -13,6 +13,6 @@ public class TenIdeasFirstActivity extends FirstActivity {
 
 	@Override
 	protected FirstActivityDataHolder getMultipleUserModeDataHolder() {
-		return null;
+		return new FirstActivityDataHolder();
 	}
 }
