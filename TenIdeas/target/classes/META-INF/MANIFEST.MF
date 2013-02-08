@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk: 1.7.0_09
-Built-By: mcharland
+Build-Jdk: 1.7.0
+Built-By: Velo
 Created-By: Maven Integration for Eclipse
 

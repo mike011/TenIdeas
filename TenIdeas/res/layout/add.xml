@@ -8,16 +8,6 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:text="@string/add_new_person" />
-=======
-        android:text="@string/addTitle" />
->>>>>>> b587450cb0ce1b7e9e7cb4994b104d264d3cfa59
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/name" />
 
     <EditText
@@ -28,24 +18,7 @@
 
         <requestFocus />
     </EditText>
-    
-<<<<<<< HEAD
-=======
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/email" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text" >
-    </EditText>
-
->>>>>>> b587450cb0ce1b7e9e7cb4994b104d264d3cfa59
     <Button
         android:id="@+id/save"
         android:layout_width="wrap_content"
