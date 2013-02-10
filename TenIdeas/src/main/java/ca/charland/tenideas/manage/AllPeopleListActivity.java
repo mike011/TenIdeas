@@ -1,14 +1,14 @@
 package ca.charland.tenideas.manage;
 
-import ca.charland.activity.manage.AllPeopleListActivity;
+import ca.charland.activity.manage.BaseAllPeopleListActivity;
 import ca.charland.db.AbstractPersonDataSource;
 import ca.charland.db.BasicPersonDataSource;
 
-public class TenIdeasAllPeopleListActivity extends AllPeopleListActivity {
+public class AllPeopleListActivity extends BaseAllPeopleListActivity {
 
 	@Override
 	protected Class<?> getFirstClass() {
-		return TenIdeasFirstActivity.class;
+		return FirstActivity.class;
 	}
 
 	@Override
@@ -18,6 +18,6 @@ public class TenIdeasAllPeopleListActivity extends AllPeopleListActivity {
 
 	@Override
 	protected Class<?> getHomeActivity() {
-		return TanitaPersonHomeActivity.class;
+		return PersonHomeActivity.class;
 	}
 }
