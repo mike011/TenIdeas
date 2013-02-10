@@ -8,7 +8,7 @@ public class FirstActivity extends BaseFirstActivity {
 
 	@Override
 	protected BasePersonHomeActivityDataHolder getSingleUserModeDataHolder() {
-		return null;
+		return new PersonHomeActivityDataHolder();
 	}
 
 	@Override
