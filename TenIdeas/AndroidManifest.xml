@@ -13,13 +13,23 @@
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name" >
-        <activity android:name="ca.charland.tenideas.manage.FirstActivity" >
+        <activity android:name=".tenideas.manage.FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+         <activity android:name=".activity.manage.PreferencesActivity" />
+        <activity android:name=".tenideas.manage.PersonHomeActivity" />
+        <activity android:name=".tenideas.manage.AddANewPersonActivity" />
+        <activity android:name=".tenideas.manage.DateValuesEnteredActivity"/>"
+        <activity android:name=".tenideas.manage.DateListOfPreviousEntriesActivity" />
+        <activity android:name=".tenideas.manage.AllPeopleListActivity" />
+        <activity android:name=".tenideas.manage.SingleDateValuesEnteredActivity" />
+        <activity android:name=".tenideas.DateAndTimeActivity" />
+        <activity android:name=".tenideas.IdeasActivity" />
+       
     </application>
 
 </manifest>
