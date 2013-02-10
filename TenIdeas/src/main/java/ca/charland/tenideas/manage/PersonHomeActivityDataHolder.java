@@ -1,9 +1,9 @@
 package ca.charland.tenideas.manage;
 
 import ca.charland.activity.DateAndTimeActivity;
-import ca.charland.activity.manage.PersonHomeActivityDataHolder;
+import ca.charland.activity.manage.BasePersonHomeActivityDataHolder;
 
-public class TenIdeasPersonHomeActivityDataHolder extends PersonHomeActivityDataHolder {
+public class PersonHomeActivityDataHolder extends BasePersonHomeActivityDataHolder {
 
 	@Override
 	public Class<?> getNextAddClass() {
@@ -12,11 +12,11 @@ public class TenIdeasPersonHomeActivityDataHolder extends PersonHomeActivityData
 
 	@Override
 	public Class<?> getNextViewClass() {
-		return TanitaDateListOfPreviousEntriesActivity.class;
+		return DateListOfPreviousEntriesActivity.class;
 	}
 
 	@Override
 	protected Class<?> getNextClass() {
-		return TenIdeasAllPeopleListActivity.class;
+		return AllPeopleListActivity.class;
 	}
 }

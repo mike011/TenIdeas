@@ -1,9 +1,9 @@
 package ca.charland.tenideas.manage;
 
-import ca.charland.activity.manage.DateListOfPreviousEntriesActivity;
+import ca.charland.activity.manage.BaseDateListOfPreviousEntriesActivity;
 import ca.charland.db.DateListDataSource;
 
-public class TanitaDateListOfPreviousEntriesActivity extends DateListOfPreviousEntriesActivity {
+public class DateListOfPreviousEntriesActivity extends BaseDateListOfPreviousEntriesActivity {
 
 	@Override
 	protected DateListDataSource getDateListDataSource() {
@@ -12,6 +12,6 @@ public class TanitaDateListOfPreviousEntriesActivity extends DateListOfPreviousE
 
 	@Override
 	protected Class<?> getPreviousEntryClass() {
-		return TendIdeasSingleDateValuesEnteredActivity.class;
+		return SingleDateValuesEnteredActivity.class;
 	}
 }
