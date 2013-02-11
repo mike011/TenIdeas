@@ -3,3 +3,6 @@ bin
 target
 .gitignore~
 gen
+.classpath
+.project
+local.properties
