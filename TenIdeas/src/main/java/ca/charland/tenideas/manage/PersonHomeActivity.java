@@ -7,7 +7,6 @@ public class PersonHomeActivity extends BasePersonHomeActivity{
 
 	@Override
 	protected BasePersonHomeActivityDataHolder getPersonHomActivityDataHolder() {
-		return null; //new PersonHomeActivityDataHolder();
+		return new PersonHomeActivityDataHolder();
 	}
-
 }

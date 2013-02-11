@@ -1,13 +1,13 @@
 package ca.charland.tenideas.manage;
 
-import ca.charland.activity.BaseDateAndTimeActivity;
 import ca.charland.activity.manage.BasePersonHomeActivityDataHolder;
+import ca.charland.tenideas.DateAndTimeActivity;
 
 public class PersonHomeActivityDataHolder extends BasePersonHomeActivityDataHolder {
 
 	@Override
 	public Class<?> getNextAddClass() {
-		return BaseDateAndTimeActivity.class;
+		return DateAndTimeActivity.class;
 	}
 
 	@Override

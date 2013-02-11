@@ -13,6 +13,6 @@ public class FirstActivity extends BaseFirstActivity {
 
 	@Override
 	protected BaseFirstActivityDataHolder getMultipleUserModeDataHolder() {
-		return new BaseFirstActivityDataHolder();
+		return new FirstActivityDataHolder();
 	}
 }
