@@ -1,5 +1,6 @@
 package ca.charland.db;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -21,6 +22,10 @@ public class DatabaseConnection extends SQLiteOpenHelper {
 	private final String tableName;
 
 	private final String createTableSQL;
+	
+	public DatabaseConnection(Context context) {
+		this(context, DATABASE_NAME, DataTable.TABLE_NAME, DataTable.CREATE_DATABASE_TABLE);
+	}
 
 	public DatabaseConnection(Context context, String database, String table, String createTableSQL) {
 		super(context, database, null, DATABASE_VERSION);
@@ -60,6 +65,7 @@ public class DatabaseConnection extends SQLiteOpenHelper {
 		return msg.toString();
 	}
 	
+	@SuppressLint("Override")
 	public String getDatabaseName() {
 		return databaseName;
 	}

@@ -18,9 +18,7 @@ import ca.charland.db.DateListDataSource;
 public abstract class BaseDateAndTimeActivity extends BaseActivity {
 
 	private static final int SECONDS = 0;
-
 	private DatePicker datePicker;
-
 	private TimePicker timePicker;
 
 	@Override
@@ -95,6 +93,6 @@ public abstract class BaseDateAndTimeActivity extends BaseActivity {
 
 	@Override
 	protected DataSource getDataSource() {
-		return new DateListDataSource(null);
+		return new DateListDataSource(this);
 	}
 }
