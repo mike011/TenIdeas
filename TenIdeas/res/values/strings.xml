@@ -20,5 +20,7 @@
     <string name="singleUser">Enable Single User Mode?</string>
     <string name="generic_error_message">Invalid</string>
     <string name="valid_name">Name added</string>
+    <string name="enter_idea">Enter idea:</string>
+    <string name="previous">Previous</string>
 
 </resources>
