@@ -1,5 +1,6 @@
 package ca.charland.tenideas;
 
+import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
 
 import com.jayway.android.robotium.solo.Solo;
@@ -14,6 +15,11 @@ public class IdeasTest extends ActivityInstrumentationTestCase2<IdeasActivity>{
 	
 	@Override
 	public void setUp() throws Exception {
+		
+		Intent intent = new Intent();
+		intent.putExtra("ID", 5);
+		setActivityIntent(intent);
+		
 		//setUp() is run before a test case is started. 
 		//This is where the solo object is created.
 		solo = new Solo(getInstrumentation(), getActivity());
@@ -26,8 +32,15 @@ public class IdeasTest extends ActivityInstrumentationTestCase2<IdeasActivity>{
 		solo.finishOpenedActivities();
 	}
 	
-	public void testOpenAddANewPerson() throws Exception {
+	public void testNextButton() throws Exception {
 		solo.typeText(0, "bla bla");
-		solo.clickOnButton("next");
+		solo.clickOnButton("Next");
+		solo.assertCurrentActivity("Expected ideas", "IdeasActivity");
+	}
+	
+	public void testPreviousButton() throws Exception {
+		solo.typeText(0, "bla bla");
+		solo.clickOnButton("Previous");
+		solo.assertCurrentActivity("Expected ideas", "IdeasActivity");
 	}
 }
