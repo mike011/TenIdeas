@@ -68,6 +68,9 @@ public class IdeasActivity extends RoboActivity {
 	private int getIDFromExtras(Intent intent) {
 		int id = -1;
 		Bundle extras = intent.getExtras();
+		if(extras == null) {
+			throw new ExtrasNotSetException();
+		}
 		if (extras.containsKey(ID)) {
 			return extras.getInt(ID);
 		}
