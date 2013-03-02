@@ -1,4 +1,4 @@
-package ca.charland.tanita;
+package ca.charland.tenideas;
 
 import android.test.ActivityInstrumentationTestCase2;
 import ca.charland.tenideas.manage.FirstActivity;
