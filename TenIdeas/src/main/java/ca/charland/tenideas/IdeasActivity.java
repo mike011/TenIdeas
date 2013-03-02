@@ -26,9 +26,9 @@ public class IdeasActivity extends RoboActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ideas);
+		setupID();
 		setEnterText();
 		setUpNextButton();
-		setupID();
 	}
 
 	private void setEnterText() {
@@ -79,6 +79,7 @@ public class IdeasActivity extends RoboActivity {
 
 	private Intent getNextIntent() {
 		Intent newIntent = new Intent(getBaseContext(), getClass());
+		++id;
 		newIntent.putExtra(ID, id);
 		return newIntent;
 	}
