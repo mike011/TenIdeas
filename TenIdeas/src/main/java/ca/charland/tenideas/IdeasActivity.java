@@ -1,5 +1,6 @@
 package ca.charland.tenideas;
 
+import ca.charland.tenideas.manage.PersonHomeActivity;
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
 import android.content.Intent;
@@ -49,6 +50,10 @@ public class IdeasActivity extends RoboActivity {
 	private void setupID() {
 		id = getID();
 		
+		baseCase();
+	}
+
+	private void baseCase() {
 		// base case
 		if(id == -1) {
 			id = 1;
@@ -78,9 +83,15 @@ public class IdeasActivity extends RoboActivity {
 	}
 
 	private Intent getNextIntent() {
-		Intent newIntent = new Intent(getBaseContext(), getClass());
-		++id;
-		newIntent.putExtra(ID, id);
+		
+		Intent newIntent = null;
+		if(id == 10) {
+			newIntent = new Intent(getBaseContext(), PersonHomeActivity.class);
+		} else {
+			newIntent = new Intent(getBaseContext(), getClass());
+			++id;
+			newIntent.putExtra(ID, id);
+		}
 		return newIntent;
 	}
 
